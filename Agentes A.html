@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💼 AGENTES A</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.filter-section select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.filter-section button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-section button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>💼 Agentes A</h2>
+
+</script>
+
+<div class="filter-section">
+  <label for="stateFilter">Filtrar por Estado:</label>
+  <select id="stateFilter" onchange="filterTable()">
+    <option value="">Todos</option>
+    <option value="Arizona">Arizona</option>
+    <option value="Carolina del norte">Carolina del Norte</option>
+    <option value="Florida">Florida</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Ilinois">Illinois</option>
+    <option value="New Jersey">New Jersey</option>
+    <option value="Ohio">Ohio</option>
+    <option value="Texas">Texas</option>
+    <option value="Virginia">Virginia</option>
+  </select>
+  
+    <label for="companyFilter">Filtrar por Compañía:</label>
+    <select id="companyFilter" onchange="filterTable()">
+      <option value="">Todas</option>
+      <option value="Ambetter">Ambetter</option>
+      <option value="Cigna">Cigna</option>
+      <option value="Oscar">Oscar</option>
+      <option value="Blue Cross">Blue Cross</option>
+      <option value="United">United</option>
+      <option value="Aetna">Aetna</option>
+      <option value="Baylor">Baylor</option>
+      <option value="Floria Blue (nuevas)">Floria Blue (nuevas)</option>
+      <option value="Floria Blue (C. R)">Floria Blue (C. R)</option>
+      <option value="Community">Community</option>
+      <option value="Amerihealth Caritas">Amerihealth Caritas</option>
+      <option value="Health First">Health First</option>
+    </select>
+
+    <label for="agentFilter">Filtrar por Agente:</label>
+    <select id="agentFilter" onchange="filterTable()">
+      <option value="">Todos</option>
+      <option value="Wildeiby Castillo - 20497356">Wildeiby Castillo - 20497356</option>
+      <option value="Leslie Lopez - 20464969">Leslie Lopez - 20464969</option>
+      <option value="Joel Nieves - 19952518">Joel Nieves - 19952518</option>
+    <option value="Mark Cunningham - 17558079">Mark Cunningham - 17558079</option>
+    <option value="Nairy Martinez - 21057385">Nairy Martinez - 21057385</option>
+  </select>
+    </select>
+  </div>
+
+  <table id="dataTable">
+<tr>
+  <td>Florida</td>
+  <td>Ambetter</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Texas</td>
+  <td>Ambetter</td>
+  <td>Joel Nieves - 19952518</td>
+</tr>
+
+<tr>
+  <td>Arizona</td>
+  <td>Ambetter</td>
+  <td>Joel Nieves - 19952518</td>
+</tr>
+
+<tr>
+  <td>Texas</td>
+  <td>Ambetter</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Georgia</td>
+  <td>Ambetter</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Ilinois</td>
+  <td>Ambetter</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Carolina del norte</td>
+  <td>Ambetter</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Ohio</td>
+  <td>Ambetter</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>New Jersey</td>
+  <td>Ambetter</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>Arizona</td>
+  <td>Ambetter</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Virginia</td>
+  <td>Ambetter</td>
+  <td>Joel Nieves - 19952518</td>
+</tr>
+
+<tr>
+  <td>Florida</td>
+  <td>Cigna</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Georgia</td>
+  <td>Cigna</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Florida</td>
+  <td>Ambetter</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Texas</td>
+  <td>Cigna</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Virginia</td>
+  <td>Cigna</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Florida</td>
+  <td>Oscar</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+
+<tr>
+  <td>Texas</td>
+  <td>Oscar</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Georgia</td>
+  <td>Oscar</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Ohio</td>
+  <td>Oscar</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>New Jersey</td>
+  <td>Oscar</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>Virginia</td>
+  <td>Oscar</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Ilinois</td>
+  <td>Oscar</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Carolina del norte</td>
+  <td>Oscar</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Arizona</td>
+  <td>Oscar</td>
+  <td>Joel Nieves - 19952518</td>
+</tr>
+
+<tr>
+  <td>Texas</td>
+  <td>Blue Cross</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>Florida</td>
+  <td>United</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Texas</td>
+  <td>United</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Georgia</td>
+  <td>United</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Virginia</td>
+  <td>United</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Carolina del norte</td>
+  <td>United</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Ohio</td>
+  <td>United</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>Arizona</td>
+  <td>United</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Georgia</td>
+  <td>Aetna</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Ohio</td>
+  <td>Aetna</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>New Jersey</td>
+  <td>Aetna</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>Florida</td>
+  <td>Aetna</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Texas</td>
+  <td>Aetna</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Virginia</td>
+  <td>Aetna</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Carolina del norte</td>
+  <td>Aetna</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Ilinois</td>
+  <td>Aetna</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Arizona</td>
+  <td>Aetna</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Texas</td>
+  <td>Baylor</td>
+  <td>Mark Cunningham - 17558079</td>
+</tr>
+
+<tr>
+  <td>Florida</td>
+  <td>Floria Blue (nuevas)</td>
+  <td>Nairy Martinez - 21057385</td>
+</tr>
+
+<tr>
+  <td>Florida</td>
+  <td>Floria Blue (C. R)</td>
+  <td>Joel Nieves - 19952518</td>
+</tr>
+
+<tr>
+  <td>Texas</td>
+  <td>Community</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>Florida</td>
+  <td>Amerihealth Caritas</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>Texas</td>
+  <td>Health First</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+<tr>
+  <td>Texas</td>
+  <td>Molina</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>Florida</td>
+  <td>Molina</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>Ohio</td>
+  <td>Molina</td>
+  <td>Leslie Lopez - 20464969</td>
+</tr>
+
+<tr>
+  <td>Ilinois</td>
+  <td>Molina</td>
+  <td>Wildeiby Castillo - 20497356</td>
+</tr>
+
+
+
+</table>
+
+  <script>
+    function filterTable() {
+      var stateFilter = document.getElementById("stateFilter").value.toUpperCase();
+      var companyFilter = document.getElementById("companyFilter").value.toUpperCase();
+      var agentFilter = document.getElementById("agentFilter").value.toUpperCase();
+      var table = document.getElementById("dataTable");
+      var tr = table.getElementsByTagName("tr");
+
+      for (var i = 0; i < tr.length; i++) {
+        var tdState = tr[i].getElementsByTagName("td")[0];
+        var tdCompany = tr[i].getElementsByTagName("td")[1];
+        var tdAgent = tr[i].getElementsByTagName("td")[2];
+
+        if (tdState && tdCompany && tdAgent) {
+          var stateValue = tdState.textContent || tdState.innerText;
+          var companyValue = tdCompany.textContent || tdCompany.innerText;
+          var agentValue = tdAgent.textContent || tdAgent.innerText;
+
+          if (
+            (stateFilter === "" || stateValue.toUpperCase() === stateFilter) &&
+            (companyFilter === "" || companyValue.toUpperCase() === companyFilter) &&
+            (agentFilter === "" || agentValue.toUpperCase() === agentFilter)
+          ) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+
+    // Al cargar la página, se filtra la tabla con los valores iniciales
+    filterTable();
+  </script>
+</div>
+
+</body>
+</html>
+
+
